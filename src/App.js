@@ -1,23 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import ProductsPage from './pages/products/products.page';
+import videoBike from './pages/products/components/video/videoBike.mp4';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      
+
+      <video  autoPlay  loop muted
+      style = {{
+        position:"absolute",
+        width: "100%",
+        left:"0%",
+        top:"2%",
+        height:"100%",
+        objectFit:"cover",
+        transform:"traslate(-60%, -60% )",
+        zIndex:"-1",
+    }}
+      >
+        <source src={videoBike} type="video/mp4"  >
+
+        </source>
+      </video>
+  
+      ______<ProductsPage/>
+      
+      
+      
     </div>
   );
 }
