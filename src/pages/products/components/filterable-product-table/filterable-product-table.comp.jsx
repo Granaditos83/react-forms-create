@@ -7,6 +7,10 @@ import './filterable-product-table.style.css';
   const FilterableProductTable = () => {
      return(
          <div className="filterable-product-table-container"  >
+            <h1>R🚲DAND🚲.com  ®  </h1>
+
+
+           
 
            <SearchBar/>
            <ProductTable/>

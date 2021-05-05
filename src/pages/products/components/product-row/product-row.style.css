@@ -1,0 +1,24 @@
+.product-row-container{
+    border: 3px solid rgb(17, 200, 224);
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 30px;
+    border-radius: 10px;
+ 
+    background: linear-gradient(500deg, rgb(236, 240, 14) 10%, rgb(6, 22, 245) 35%, rgb(240, 14, 14) 100%);
+      
+
+     
+    
+    
+    
+}
+
+.producto-sin-existencia{
+    color: red;
+}
+h2{
+    color: rgb(75, 243, 9);
+}
+span{
+    color: rgb(38, 190, 38);
+}

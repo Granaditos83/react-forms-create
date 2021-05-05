@@ -16,7 +16,7 @@ function App() {
         width: "100%",
         left:"0%",
         top:"2%",
-        height:"100%",
+        height:"163%",
         objectFit:"cover",
         transform:"traslate(-60%, -60% )",
         zIndex:"-1",
@@ -26,6 +26,10 @@ function App() {
 
         </source>
       </video>
+
+      
+
+    
   
       ______<ProductsPage/>
       
