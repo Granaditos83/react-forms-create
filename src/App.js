@@ -9,8 +9,7 @@ function App() {
     <div className="App">
       
       
-
-      <video  autoPlay  loop muted
+     <video  autoPlay  loop muted
       style = {{
         position:"absolute",
         width: "100%",
@@ -26,12 +25,13 @@ function App() {
 
         </source>
       </video>
+      
 
       
 
     
   
-      ______<ProductsPage/>
+    <ProductsPage/>
       
       
       

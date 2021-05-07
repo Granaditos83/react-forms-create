@@ -6,74 +6,113 @@ import ProductRow from '../product-row/product-row.comp';
 
 import './product-table.style.css';
 
-  const ProductTable= () => {
+  const ProductTable= (props) => {
+
+   
+
+
+
      return(
          <div className="product-table-container"  >
+           <div>
+           {props.productsList.map  ((category, index)=>{
+             return (
+             <React.Fragment key={category.id} >
+
+             <ProductCategoryRow categoryName ={category.name} />
+
+             {category.products.map ((product, indexProduct)=>{
+              return(
+                <ProductRow  key={product.id} product={ product}/>
+                );
+              } ) }
+              </React.Fragment>
+              );
+            } ) }
+              <div>
+
+          
+              
+            <div className="products-form">
+         <form >
+           <tr>
+             <td>
+             categorias
+             </td>
+             
+           
+           </tr>
+           <tr>
+             <td>
+             <select>
+             <option value="c1">Marcos bicicletas</option>
+             <option value="c2">Accesorios</option>
+             <option value="c3">Vestimenta</option>
+             <option value="c4">Cascos</option>
+           </select>
+             </td>
+             </tr>
+             <tr>
+               <td>Marca</td>
+               <td><input type="text" /></td>
+             </tr>
+             <tr>
+               <td>Color</td>
+               <td><input type="text" /></td>
+             </tr>
+             <tr>
+               <td>Procedencia</td>
+               <td><input type="text" /></td>
+             </tr>
+             <tr>
+               <td>Precio</td>
+               <td><input type="text" /></td>
+             </tr>
+             <tr>
+               <td>Stock</td>
+               <td><input type="text" /></td>
+             </tr>
+             <td>
+             <tr>
+             <a class="boton_personalizado" href="">Agregar producto</a>
+             </tr>
+             </td>
+            
+         
+          
+            
+          
+          
+         </form>
+       </div>
+            </div>
+                    
+                 
+                
+
+
+         
+
+
+             
+          
+          
+           </div>
+
+      
+        </div>
+
+);
+
+}
+export default ProductTable ;
+
 
            
 
         
-           <p><ProductCategoryRow categoryName="Marcos bicicletas"  /></p>
-           <ProductRow product= {{
-             marca: 'Monguss', 
-             color:'Azul',
-             procedencia: 'Australia',
-             precio: '12.000.000',
-             stock: 0
-
            
-             
-           }} />
-             <ProductRow product= {{
-             marca: 'Garry Tunner', 
-             color:'Azul',
-             procedencia: 'Estados Unidos',
-             precio: '1.000.000',
-             stock: 1
-            }} />
-            
-                 <ProductRow product= {{
-             marca: 'turboman', 
-             color:'Azul',
-             procedencia: 'China',
-             precio: '11.000.000',
-             stock: 3
-            }} />
-             
-          
-             
-            
-          
-          <p> <ProductCategoryRow categoryName="Accesorios "  /></p>
-           <ProductRow product= {{
-             marca: 'Monguss',
-             color:'Azul',
-             procedencia: 'Australia',
-             precio: '12.000.000',
-             stock: '2'
-          
-             
-            
-           }} />
-
-           <p><ProductCategoryRow categoryName="Vestimenta"  /></p>
-           <ProductRow product= {{
-             marca: 'Monguss',
-             color:'Azul',
-             procedencia: 'Australia',
-             precio: '12.000.000',
-             stock: '2'
-          
-             
-            
-           }} />
-        
            
          
             
-         </div>
-
-     );
-    
-}
-export default ProductTable ;
+   

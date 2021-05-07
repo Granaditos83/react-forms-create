@@ -4,7 +4,7 @@ import SearchBar from '../serach-bar/search-bar.comp';
 import './filterable-product-table.style.css';
 
 
-  const FilterableProductTable = () => {
+  const FilterableProductTable = (props) => {
      return(
          <div className="filterable-product-table-container"  >
             <h1>R🚲DAND🚲.com  ®  </h1>
@@ -13,7 +13,7 @@ import './filterable-product-table.style.css';
            
 
            <SearchBar/>
-           <ProductTable/>
+           <ProductTable productsList = {props.productsList}  />
             
          </div>
 
