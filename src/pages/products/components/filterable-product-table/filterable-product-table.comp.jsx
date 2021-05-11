@@ -13,7 +13,11 @@ import './filterable-product-table.style.css';
            
 
            <SearchBar/>
-           <ProductTable productsList = {props.productsList}  />
+           <ProductTable
+            productsList = {props.productsList}
+            onAddProduct={props.onAddProduct}
+
+             />
             
          </div>
 

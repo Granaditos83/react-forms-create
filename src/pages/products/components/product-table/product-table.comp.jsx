@@ -18,6 +18,19 @@ import './product-table.style.css';
 
      const adicionarProducto = (event)=> {
        event.preventDefault();
+       const newProduct=
+       {
+        id: name,
+        color: color,
+        procedencia: procedencia,
+        precio: parseFloat(precio) ,
+        stock: Number(stock),
+      };
+        
+      
+
+     
+       props.onAddProduct( newProduct, category);
        console.log('category' + category );
        console.log('name' + name );
        console.log('color' + color );

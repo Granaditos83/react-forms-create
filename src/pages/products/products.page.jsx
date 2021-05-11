@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FilterableProductTable  from './components/filterable-product-table/filterable-product-table.comp';
 
   const ProductsPage = () => {
@@ -117,14 +117,40 @@ import FilterableProductTable  from './components/filterable-product-table/filte
         },
         
 
-      ]
+      ];
+
+      const[products, setProducts] = useState (productsList);
   
       
      return(
        <>
        <FilterableProductTable
-        productsList={productsList} 
-        
+        productsList={products} 
+        onAddProduct={(productObj, categoryId)=>{
+
+          const newProducts = [];
+       for(let i = 0; i < products.length; i++){
+         if(products[i].id === categoryId){
+           newProducts.push(products[i]);
+         }
+         else{
+          newProducts.push
+          ({...products[i],
+            products:[... products[i].products,productObj]
+          }
+
+         );
+
+         }
+       
+
+       }
+       setProducts (newProducts);
+      
+
+
+        } }
+
         />
       
        </>

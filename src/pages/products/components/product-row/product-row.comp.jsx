@@ -12,9 +12,9 @@ import './product-row.style.css';
            
             props.product.stock === 0
             ?
-            <span className="producto-sin-existencia">{props.product.stock} { }🔴{  } producto no disponible 😰  </span>
+            <span className="producto-sin-existencia">$ {props.product.stock} { }🔴{  } producto no disponible 😰  </span>
             :
-            <span>{props.product.stock} { }🟢 Producto disponible 🙂 </span>
+            <span> $ {props.product.stock} { }🟢 Producto disponible 🙂 </span>
         
         }
            
