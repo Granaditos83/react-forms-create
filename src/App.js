@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ProductsPage from './pages/products/products.page';
 import videoBike from './pages/products/components/video/videoBike.mp4';
@@ -15,7 +15,7 @@ function App() {
         width: "100%",
         left:"0%",
         top:"2%",
-        height:"163%",
+        height:"193%",
         objectFit:"cover",
         transform:"traslate(-60%, -60% )",
         zIndex:"-1",

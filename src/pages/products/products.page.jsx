@@ -122,7 +122,10 @@ import FilterableProductTable  from './components/filterable-product-table/filte
       
      return(
        <>
-       <FilterableProductTable productsList={productsList} />
+       <FilterableProductTable
+        productsList={productsList} 
+        
+        />
       
        </>
 
