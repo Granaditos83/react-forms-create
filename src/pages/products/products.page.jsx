@@ -33,6 +33,14 @@ import FilterableProductTable  from './components/filterable-product-table/filte
               procedencia: 'China',
               precio: '11.000.000',
               stock: '3'
+            },
+            {
+              id:"c1p4",
+              marca: 'yayoRacing', 
+              color:'verde menta',
+              procedencia: 'China',
+              precio: '11.000.000',
+              stock: '4', 
             }
           ]
         },
@@ -47,20 +55,37 @@ import FilterableProductTable  from './components/filterable-product-table/filte
           products: [
             {
               id:"c2p1",
-              marca: 'Monguss',
-              color:'Azul',
-              procedencia: 'Australia',
-              precio: '12.000.000',
+              marca: 'Fox suspension',
+              color:'Estandar',
+              procedencia: 'Estados unidos',
+              precio: '7.000.000',
               stock: '2'
             },
             {
               id:"c2p2",
-              marca: 'Monguss',
-              color:'Azul',
+              marca: 'Morita suspension',
+              color:'Amarillo',
               procedencia: 'Australia',
+              precio: '11.000.000',
+              stock: '0',
+            },
+            {
+              id:"c2p3",
+              marca: 'Monguss suspension',
+              color:'Azul',
+              procedencia: 'Africa',
+              precio: '8.500.000',
+              stock: '7'
+            },
+            {
+              id:"c2p4",
+              marca: 'Canino suspension',
+              color:'Cromado',
+              procedencia: 'Europa',
               precio: '12.000.000',
-              stock: '2'
+              stock: '9'
             }
+            
           ]
         },
 
@@ -81,11 +106,19 @@ import FilterableProductTable  from './components/filterable-product-table/filte
             {
               id:"c3p2",
               marca: 'Fox racing',
-              color:'Azul',
-              procedencia: 'Colombia',
-              precio: '120.000',
+              color:'rojo Claro',
+              procedencia: 'Estados unidos',
+              precio: '145.000',
               stock: 6,
 
+            },
+            {
+              id:"c3p3",
+              marca: 'Fox racing',
+              color:'Amarillo sol',
+              procedencia: 'Estados unidos',
+              precio: '145.000',
+              stock: 3,
             }
           
           ]
@@ -111,6 +144,14 @@ import FilterableProductTable  from './components/filterable-product-table/filte
               precio: '120.000',
               stock: 0,
 
+            },
+            {
+              id:"c4p3",
+              marca: 'Armamentox',
+              color:'Metalizado',
+              procedencia: 'Colombia',
+              precio: '150.000',
+              stock: 0,
             }
           
           ]

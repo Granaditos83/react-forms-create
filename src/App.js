@@ -15,7 +15,7 @@ function App() {
         width: "100%",
         left:"0%",
         top:"2%",
-        height:"193%",
+        height:"240%",
         objectFit:"cover",
         transform:"traslate(-60%, -60% )",
         zIndex:"-1",

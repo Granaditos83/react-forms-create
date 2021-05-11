@@ -8,6 +8,11 @@
     
 }
 
-tr{
-    text-align: center;
+.tablita{
+   
+    background-color: rgba(126, 245, 7, 0.445);
+    text-align: end;
+    box-sizing: border-box;
+    border-radius: 10px;
+
 }

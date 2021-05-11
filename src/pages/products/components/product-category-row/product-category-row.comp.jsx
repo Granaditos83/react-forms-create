@@ -9,7 +9,7 @@ import './product-category-row.style.css';
             {props.categoryName}
 
             
-<table>
+<table className="tablita">
 <tr>
   <td><option value="c1">Marca</option></td>
   <td> <option value="c2">Color</option></td>
