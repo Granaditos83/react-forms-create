@@ -4,9 +4,24 @@ import ProductsPage from './pages/products/products.page';
 import videoBike from './pages/products/components/video/videoBike.mp4';
 
 
+
+
+
+
 function App() {
+
+ 
   return (
+
+
+
+   
     <div className="App">
+
+      
+
+
+
       
       
      <video  autoPlay  loop muted
@@ -15,7 +30,7 @@ function App() {
         width: "100%",
         left:"0%",
         top:"2%",
-        height:"240%",
+        height:"260%",
         objectFit:"cover",
         transform:"traslate(-60%, -60% )",
         zIndex:"-1",
@@ -26,12 +41,13 @@ function App() {
         </source>
       </video>
       
+      
 
       
 
     
-  
-    <ProductsPage/>
+      
+    <ProductsPage />
       
       
       
@@ -40,3 +56,6 @@ function App() {
 }
 
 export default App;
+
+
+

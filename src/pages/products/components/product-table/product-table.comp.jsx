@@ -10,9 +10,9 @@ import './product-table.style.css';
 
 
      const [category, setCategory] = useState ('c1');
-     const [name, setName] = useState ('');
-     const [color, setColor] = useState ('');
-     const [procedencia, setProcedencia] = useState ('');
+     const [name, setName] = useState ();
+     const [color, setColor] = useState ();
+     const [procedencia, setProcedencia] = useState ();
      const [precio, setPrecio] = useState (0);
      const [stock, setStock] = useState (10);
 
@@ -20,10 +20,12 @@ import './product-table.style.css';
        event.preventDefault();
        const newProduct=
        {
-        id: name,
+        category:category,
+        
+        marca: name,
         color: color,
         procedencia: procedencia,
-        precio: parseFloat(precio) ,
+        precio: Number (precio) ,
         stock: Number(stock),
       };
         
@@ -130,7 +132,7 @@ import './product-table.style.css';
              <tr>
                <td>Precio</td>
                <td><input
-                type="0"
+                type="Number"
                 
                 value={precio}
                 onChange={(event)=>{
@@ -143,7 +145,7 @@ import './product-table.style.css';
              <tr>
                <td>Stock</td>
                <td><input
-                type="0"
+                type="Number"
                
                 value={stock}
                 onChange={(event)=>{
