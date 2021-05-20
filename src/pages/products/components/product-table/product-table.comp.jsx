@@ -13,7 +13,7 @@ import './product-table.style.css';
      const [name, setName] = useState ();
      const [color, setColor] = useState ();
      const [procedencia, setProcedencia] = useState ();
-     const [precio, setPrecio] = useState (0);
+     const [precio, setPrecio] = useState ();
      const [stock, setStock] = useState (10);
 
      const adicionarProducto = (event)=> {
@@ -21,7 +21,6 @@ import './product-table.style.css';
        const newProduct=
        {
         category:category,
-        
         marca: name,
         color: color,
         procedencia: procedencia,
